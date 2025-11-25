@@ -59,7 +59,7 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
             >
-            Full Stack Laravel Developer | Digital Marketing Specialist
+              Full Stack Laravel Developer | Digital Marketing Specialist
             </motion.p>
 
             <motion.p
@@ -68,7 +68,11 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
             >
-              I build modern and scalable web applications using Laravel, PHP, MySQL, and REST APIs. I have developed multiple eCommerce projects and also work in social media marketing, website management, and online brand promotion. I enjoy creating digital solutions that help businesses grow.
+              I build modern and scalable web applications using Laravel, PHP,
+              MySQL, and REST APIs. I have developed multiple eCommerce projects
+              and also work in social media marketing, website management, and
+              online brand promotion. I enjoy creating digital solutions that
+              help businesses grow.
             </motion.p>
 
             <motion.div
@@ -88,13 +92,22 @@ export function Hero() {
               >
                 View My Projects
               </Button>
+
+              {/* Resume Download Button */}
               <Button
-                variant="outline"
+                asChild
                 size="lg"
+                variant="outline"
                 className="border-emerald-300 text-emerald-600 hover:bg-emerald-50 dark:border-emerald-700 dark:text-emerald-400 dark:hover:bg-emerald-900/20 bg-transparent"
               >
-                <Download className="w-4 h-4 mr-2" />
-                Resume
+                <a
+                  href="/images/Abdur-Rahim.pdf"
+                  download
+                  className="inline-flex items-center"
+                >
+                  <Download className="w-4 h-4 mr-2" />
+                  Resume
+                </a>
               </Button>
             </motion.div>
 
